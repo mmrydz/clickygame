@@ -1,0 +1,8 @@
+.nav {
+    background: #0ad12b;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    white-space: nowrap;
+}
