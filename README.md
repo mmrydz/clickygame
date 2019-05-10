@@ -1,4 +1,4 @@
-# Clicky Cats App
+# Clicky Cat App
 
 ## Overview
 
