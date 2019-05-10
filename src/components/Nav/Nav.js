@@ -2,19 +2,19 @@ import React from "react";
 import "./style.css";
 
 const Nav = props => (
-  <nav>
-    <ul>
-      <li className="brand animated lightSpeedIn">
-        <a href="/clicky-game/">{props.title}</a>
-      </li>
-
-      <li id="rw">{props.rightWrong}</li>
-
-      <li id="cur-sco">Current Score: {props.score}</li>
-
-      <li id="top-sco">Top Score: {props.topScore}</li>
+<nav className="navbar" >
+  <div className="container-fluid">
+    <div className="navbar-header">
+      <div className="navbrand">Clicky Cat App</div>
+    </div>
+    <ul className="navbar-right">
+      <li><span className="fas fa-sd-card"></span> Current Score: {props.score}</li>
+      <li><span className="fas fa-sd-card"></span> Current Score: {props.rightWrong}</li>
+      <li> | </li>
+      <li><span className="fas fa-trophy"></span> Top Score: {props.topScore}</li>
     </ul>
-  </nav>
+  </div>
+</nav>
 );
 
 export default Nav;

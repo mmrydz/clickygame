@@ -71,15 +71,15 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Nav
-          title="Sponge Bob Clicky Game"
+        <Nav 
+          title="Clicky Cats Game"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
 
         <Title>
-          Try to click on each character, but don't twice on the same one!
+          Try to click on each cat, but don't twice on the same one!
         </Title>
 
         <Container>

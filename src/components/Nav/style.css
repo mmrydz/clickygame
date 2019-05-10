@@ -1,9 +1,30 @@
 .nav {
-    background: #0ad12b;
+    background: #fcfcfc;
     min-height: 70px;
     z-index: -1;
-    position:relative;
+    position:absolute;
     width: 100%;
     color: #fff;
     white-space: nowrap;
+    display: inline-block;
+    align-content: left    
 }
+
+.navbrand {
+    position:relative;
+    align-content: left;
+    font: white;
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    align-content: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    padding-left: 20px;
+  }
