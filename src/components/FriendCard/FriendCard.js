@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 
-const FriendCard = props => (
-    <div 
-      className="card" 
+function FriendCard(props) {
+  return(
+    <div className="card" 
       value={props.id} 
       onClick={() => props.handleClick(props.id)}
     >
@@ -12,5 +12,6 @@ const FriendCard = props => (
       </div>
     </div>
   );
+}
   
 export default FriendCard;

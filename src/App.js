@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
-import Wrapper from "./components/Wrapper";
+import Main from "./components/Main";
 import Title from "./components/Title";
 import friends from "./friends.json";
 import "./App.css";
 
 // to keep the friends rendering in a grid:
-import Container from "./Column";
-import Row from "./Row";
-import Column from "./Column";
+import Container from "./Container";
 
 function shuffleFriends(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -70,22 +68,19 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <Main>
         <Nav 
-          title="Clicky Cats Game"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
 
         <Title>
-          Try to click on each cat, but don't twice on the same one!
+          Try to click on each cat, but don't click twice on the same one!
         </Title>
 
         <Container>
-          <Row>
             {this.state.friends.map(friend => (
-              <Column size="md-3 sm-6">
                 <FriendCard
                   key={friend.id}
                   handleClick={this.handleClick}
@@ -95,11 +90,10 @@ class App extends Component {
                   id={friend.id}
                   image={friend.image}
                 />
-              </Column>
             ))}
-          </Row>
+            <p> Meg Rydzewski</p>
         </Container>
-      </Wrapper>
+      </Main>
     );
   }
 }

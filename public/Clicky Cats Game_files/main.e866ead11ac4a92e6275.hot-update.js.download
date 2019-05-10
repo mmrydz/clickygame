@@ -1,0 +1,19 @@
+webpackHotUpdate("main",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Nav/style.css":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/Nav/style.css ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".nav {\r\n    background: #fcfcfc;\r\n    min-height: 70px;\r\n    z-index: -1;\r\n    position:absolute;\r\n    width: 100%;\r\n    color: #fff;\r\n    white-space: nowrap;\r\n    display: inline-block;\r\n    font-family: 'Courgette', cursive;\r\n    font-size: 40px;\r\n}\r\n.navbar {\r\n  align-content: left;\r\n  color: white;\r\n  font-family: 'Courgette', cursive;\r\n  font-size: 20px;\r\n}\r\n.navbrand {\r\n    align-content: left;\r\n    font-family: 'Courgette', cursive;\r\n    color: yellow;\r\n    font-size: 50px;\r\n}\r\n\r\n.doh {\r\n  font-family: 'Courgette', cursive;\r\n  color: black;\r\n  font-size: 50px;\r\n\r\n}\r\nul {\r\n    display: inline-block;\r\n    position: relative;\r\n    font-family: 'Courgette', cursive;\r\n    list-style-type: none;\r\n    align-content: right;\r\n    padding-top: 20px;\r\n    margin: 0;\r\n    color: white;\r\n  }\r\n  \r\n  li {\r\n    display: inline-block;\r\n    padding-left: 20px;\r\n    color: white;\r\n  }", ""]);
+
+
+
+/***/ })
+
+})
+//# sourceMappingURL=main.e866ead11ac4a92e6275.hot-update.js.map

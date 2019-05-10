@@ -7,24 +7,36 @@
     color: #fff;
     white-space: nowrap;
     display: inline-block;
-    align-content: left    
-}
-
-.navbrand {
-    position:relative;
-    align-content: left;
-    font: white;
+    font-family: 'Courgette', cursive;
     font-size: 40px;
+}
+.navbar {
+  align-content: left;
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+.navbrand {
+    align-content: left;
+    font-family: 'Courgette', cursive;
+    color: yellow;
+    font-size: 50px;
 }
 
 ul {
+    display: inline-block;
+    position: relative;
+    font-family: 'Courgette', cursive;
     list-style-type: none;
     align-content: right;
+    padding-top: 20px;
     margin: 0;
-    padding: 0;
+    color: white;
   }
   
   li {
-    display: inline;
+    font-family: 'Courgette', cursive;
+    display: inline-block;
     padding-left: 20px;
+    color: white;
   }

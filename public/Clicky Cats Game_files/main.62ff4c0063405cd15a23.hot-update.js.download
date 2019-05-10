@@ -1,0 +1,164 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_FriendCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/FriendCard */ "./src/components/FriendCard/index.js");
+/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Nav */ "./src/components/Nav/index.js");
+/* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Main */ "./src/components/Main/index.js");
+/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Title */ "./src/components/Title/index.js");
+/* harmony import */ var _friends_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./friends.json */ "./src/friends.json");
+var _friends_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./friends.json */ "./src/friends.json", 1);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Container */ "./src/Container.js");
+var _jsxFileName = "C:\\Users\\megry\\apps\\clickygame\\src\\App.js";
+
+
+
+
+
+
+ // to keep the friends rendering in a grid:
+
+
+
+function shuffleFriends(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    var _ref = [array[j], array[i]];
+    array[i] = _ref[0];
+    array[j] = _ref[1];
+  }
+
+  return array;
+}
+
+;
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      friends: _friends_json__WEBPACK_IMPORTED_MODULE_5__,
+      currentScore: 0,
+      topScore: 0,
+      rightWrong: "",
+      clicked: []
+    };
+
+    this.handleClick = id => {
+      if (this.state.clicked.indexOf(id) === -1) {
+        this.handleIncrement();
+        this.setState({
+          clicked: this.state.clicked.concat(id)
+        });
+      } else {
+        this.handleReset();
+      }
+    };
+
+    this.handleIncrement = () => {
+      const newScore = this.state.currentScore + 1;
+      this.setState({
+        currentScore: newScore,
+        rightWrong: ""
+      });
+
+      if (newScore >= this.state.topScore) {
+        this.setState({
+          topScore: newScore
+        });
+      } else if (newScore === 12) {
+        this.setState({
+          rightWrong: "You win!"
+        });
+      }
+
+      this.handleShuffle();
+    };
+
+    this.handleReset = () => {
+      this.setState({
+        currentScore: 0,
+        topScore: this.state.topScore,
+        rightWrong: "Doh!",
+        clicked: []
+      });
+      this.handleShuffle();
+    };
+
+    this.handleShuffle = () => {
+      let shuffledFriends = shuffleFriends(_friends_json__WEBPACK_IMPORTED_MODULE_5__);
+      this.setState({
+        friends: shuffledFriends
+      });
+    };
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      score: this.state.currentScore,
+      topScore: this.state.topScore,
+      rightWrong: this.state.rightWrong,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Title__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, "Try to click on each cat, but don't twice on the same one!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, this.state.friends.map(friend => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FriendCard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: friend.id,
+      handleClick: this.handleClick,
+      handleIncrement: this.handleIncrement,
+      handleReset: this.handleReset,
+      handleShuffle: this.handleShuffle,
+      id: friend.id,
+      image: friend.image,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/Column.js":
+false,
+
+/***/ "./src/Row.js":
+false
+
+})
+//# sourceMappingURL=main.62ff4c0063405cd15a23.hot-update.js.map

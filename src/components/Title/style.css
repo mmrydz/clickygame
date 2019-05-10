@@ -1,9 +1,8 @@
 .title {
     width: 100%;
-    background-color: white;
-    text-align: right;
+    text-align: center;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-bottom: 50px;
     padding-left: 3%;
     padding-right: 3%;  
