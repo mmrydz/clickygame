@@ -1,7 +1,8 @@
 .nav {
     background: #0ad12b;
     min-height: 70px;
-    position: fixed;
+    z-index: -1;
+    position:relative;
     width: 100%;
     color: #fff;
     white-space: nowrap;
