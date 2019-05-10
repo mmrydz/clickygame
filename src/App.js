@@ -91,7 +91,6 @@ class App extends Component {
                   image={friend.image}
                 />
             ))}
-            <p> Meg Rydzewski</p>
         </Container>
       </Main>
     );
